@@ -1,4 +1,4 @@
-CREATE TABLE my_table (
+CREATE TABLE t0 (
     id SERIAL PRIMARY KEY,
     name TEXT 
 );
