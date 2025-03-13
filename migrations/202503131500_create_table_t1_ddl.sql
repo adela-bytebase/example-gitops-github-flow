@@ -1,4 +1,4 @@
 CREATE TABLE t1 (
     id SERIAL PRIMARY KEY,
-    name TEXT
+    name TEXT NOT NULL
 );
