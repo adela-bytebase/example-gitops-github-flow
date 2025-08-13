@@ -1,2 +1,0 @@
-ALTER TABLE t1
-ADD COLUMN age integer;
