@@ -1,0 +1,4 @@
+CREATE TABLE my_table (
+    id SERIAL PRIMARY KEY,
+    name TEXT NOT NULL DEFAULT ''
+);
