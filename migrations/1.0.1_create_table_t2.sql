@@ -1,4 +1,4 @@
 CREATE TABLE t2 (
     id SERIAL PRIMARY KEY,
-    username VARCHAR(50)
+    username VARCHAR(50) NOT NULL DEFAULT ''
 )
