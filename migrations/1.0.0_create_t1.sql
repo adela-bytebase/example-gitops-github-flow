@@ -1,4 +1,4 @@
 CREATE TABLE t1(
   id INT PRIMARY KEY,
-  name TEXT
+  username TEXT
 );
