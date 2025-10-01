@@ -21,7 +21,7 @@ jobs:
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # set GITHUB_TOKEN because the 'Check release' step needs it to comment the pull request with check results.
             BYTEBASE_URL: https://valid-just-tadpole.ngrok-free.app
-            BYTEBASE_SERVICE_ACCOUNT: api@service.bytebase.com
+            BYTEBASE_SERVICE_ACCOUNT: api@service.example.com
             BYTEBASE_SERVICE_ACCOUNT_SECRET: ${{ secrets.BYTEBASE_SERVICE_ACCOUNT_SECRET }}
             BYTEBASE_PROJECT: "projects/project-sample"
             BYTEBASE_TARGETS: "instances/prod-sample-instance/databases/hr_prod"
