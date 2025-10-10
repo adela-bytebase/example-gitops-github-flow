@@ -1,0 +1,5 @@
+CREATE OR REPLACE TABLE public.t1 (
+  id INT AUTOINCREMENT,
+  name VARCHAR(100),
+  PRIMARY KEY (id)
+);
