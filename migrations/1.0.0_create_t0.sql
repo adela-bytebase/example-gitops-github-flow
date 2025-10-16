@@ -1,0 +1,4 @@
+CREATE TABLE t0 (
+    id SERIAL PRIMARY KEY,
+    username VARCHAR(50)
+);
