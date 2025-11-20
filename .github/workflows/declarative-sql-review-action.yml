@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - "schema/*.sql"
+      - ".bytebase/sql-review.md"
 
 jobs:
   check-release-on-prod:
@@ -27,4 +28,4 @@ jobs:
             BYTEBASE_TARGETS: "instances/prod-sample-instance/databases/hr_prod"
             FILE_PATTERN: "schema/*.sql"
         run: |
-          bytebase-action check --url=${{ env.BYTEBASE_URL }} --project=${{ env.BYTEBASE_PROJECT }} --targets=${{ env.BYTEBASE_TARGETS }} --file-pattern=${{ env.FILE_PATTERN }} --declarative
+          bytebase-action check --url=${{ env.BYTEBASE_URL }} --project=${{ env.BYTEBASE_PROJECT }} --targets=${{ env.BYTEBASE_TARGETS }} --file-pattern=${{ env.FILE_PATTERN }} --declarative --custom-rules "$(cat ${{ github.workspace }}/.bytebase/sql-review.md)"
