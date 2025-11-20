@@ -1,0 +1,3 @@
+CREATE TABLE IUYbjk {
+  iD INTEGER
+}
