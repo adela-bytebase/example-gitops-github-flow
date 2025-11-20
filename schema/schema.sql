@@ -1,3 +1,3 @@
-CREATE TABLE IUYbjk {
+CREATE TABLE IUYbjk (
   iD serial PRIMARY KEY
-}
+)
