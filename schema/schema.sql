@@ -66,8 +66,6 @@ CREATE TABLE "public"."salary" (
 
 CREATE INDEX "idx_salary_amount" ON ONLY "public"."salary" (amount);
 
-CREATE TRIGGER salary_log_trigger AFTER DELETE OR UPDATE ON public.salary FOR EACH ROW EXECUTE FUNCTION public.log_dml_operations();
-
 CREATE TABLE "public"."t0" (
     "id" serial,
     "username" text NOT NULL,
