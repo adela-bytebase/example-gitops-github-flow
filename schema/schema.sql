@@ -48,7 +48,7 @@ CREATE TABLE "public"."employee" (
     "first_name" text NOT NULL,
     "last_name" text NOT NULL,
     "gender" text NOT NULL,
-    "hire_date" date NOT NUL,
+    "hire_date" date NOT NULL,
     CONSTRAINT "employee_pkey" PRIMARY KEY (emp_no),
     CONSTRAINT "employee_gender_check" CHECK (gender = ANY (ARRAY['M'::text, 'F'::text]))
 );
