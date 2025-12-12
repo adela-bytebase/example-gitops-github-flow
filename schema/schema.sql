@@ -1,7 +1,8 @@
 COMMENT ON SCHEMA "public" IS 'standard public schema';
 
-CREATE TABLE "public"."ajtkdfjklsa" (
-    "id" serial
+CREATE TABLE "fakeTable" (
+    "idd" serial,
+    "name" VARCHAR(16)
 );
 
 CREATE TABLE "public"."audit" (
