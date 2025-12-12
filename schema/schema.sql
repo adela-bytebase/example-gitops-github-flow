@@ -1,6 +1,6 @@
 COMMENT ON SCHEMA "public" IS 'standard public schema';
 
-CREATE TABLE "fakeTable" (
+CREATE TABLE "public"."fakeTable" (
     "idd" serial,
     "name" VARCHAR(16)
 );
