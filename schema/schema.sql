@@ -1,5 +1,9 @@
 COMMENT ON SCHEMA "public" IS 'standard public schema';
 
+CREATE TABLE "public"."ajtkdfjklsa" (
+    "id" serial
+);
+
 CREATE TABLE "public"."audit" (
     "id" serial,
     "operation" text NOT NULL,
@@ -42,13 +46,14 @@ CREATE TABLE "public"."dept_manager" (
     CONSTRAINT "dept_manager_emp_no_fkey" FOREIGN KEY ("emp_no") REFERENCES "public"."employee" ("emp_no") ON DELETE CASCADE
 );
 
-CREATE TABLE "public"."ajkdfjdlkjfa" (
+CREATE TABLE "public"."employee" (
     "emp_no" serial,
     "birth_date" date NOT NULL,
     "first_name" text NOT NULL,
     "last_name" text NOT NULL,
     "gender" text NOT NULL,
     "hire_date" date NOT NULL,
+    CONSTRAINT "employee_pkey" PRIMARY KEY (emp_no),
     CONSTRAINT "employee_gender_check" CHECK (gender = ANY (ARRAY['M'::text, 'F'::text]))
 );
 
