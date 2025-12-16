@@ -52,7 +52,7 @@ jobs:
     runs-on: ubuntu-latest # use self-hosted machines if your Bytebase runs in internal networks.
     environment: test
     container:
-      image: docker://bytebase/bytebase-action:latest
+      image: docker://bytebase/bytebase-action:3.12.2
     steps:
       - name: Checkout
         uses: actions/checkout@v4
