@@ -1,7 +1,7 @@
 COMMENT ON SCHEMA "public" IS 'standard public schema';
 
 CREATE TABLE "public"."fake_table" (
-    "idddd" serial,
+    "idd" serial,
     "name" text
 );
 
