@@ -71,12 +71,6 @@ CREATE TABLE "public"."salary" (
 
 CREATE INDEX "idx_salary_amount" ON ONLY "public"."salary" (amount);
 
-CREATE TABLE "public"."t0" (
-    "id" serial,
-    "username" text NOT NULL,
-    CONSTRAINT "t0_pkey" PRIMARY KEY (id)
-);
-
 CREATE TABLE "public"."title" (
     "emp_no" integer NOT NULL,
     "title" text NOT NULL,
