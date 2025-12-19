@@ -1,6 +1,6 @@
 COMMENT ON SCHEMA "public" IS 'standard public schema';
 
-CREATE TABLE fake_table (
+CREATE TABLE "public".fake_table (
     "idddd" serial,
     "name" text
 );
