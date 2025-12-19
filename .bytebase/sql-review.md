@@ -5,4 +5,4 @@
 - All table names must be in snake_case
 
 ## 2. Column Standards
-- Primary key columns should be named 'id'
+- Single Primary key column should be named 'id'
