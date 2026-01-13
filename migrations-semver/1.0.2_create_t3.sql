@@ -1,4 +1,4 @@
 CREATE TABLE "public"."t3" (
     "id" serial PRIMARY KEY,
-    "username" text
+    "username" text NOT NULL
 );
