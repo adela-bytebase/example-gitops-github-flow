@@ -24,7 +24,7 @@ jobs:
             BYTEBASE_URL: https://valid-just-tadpole.ngrok-free.app
             BYTEBASE_SERVICE_ACCOUNT: api@service.bytebase.com # set service account via environment variable
             BYTEBASE_SERVICE_ACCOUNT_SECRET: ${{ secrets.BYTEBASE_SERVICE_ACCOUNT_SECRET }} # set service account secret via environment variable
-            BYTEBASE_PROJECT: "projects/mysql-project"
+            BYTEBASE_PROJECT: "projects/mysql-project-gyy6"
             BYTEBASE_TARGETS: "instances/mysql-test-instance-05k8/databases/proddb"
             FILE_PATTERN: "schema-mysql/*.sql"
         run: |
