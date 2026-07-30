@@ -18,5 +18,6 @@ CREATE TABLE `EmployeeProfile` (
   `id` int NOT NULL AUTO_INCREMENT,
   `employee_id` int NOT NULL,
   `bio` text,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`id`),
+  CONSTRAINT `fk_employee_profile_ghost` FOREIGN KEY (`employee_id`) REFERENCES `ghost_table` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
